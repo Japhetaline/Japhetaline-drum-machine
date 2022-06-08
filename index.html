@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+    
+    <title>Japhetaline Quote Machine</title>
+<script>
+function play(str){
+    
+    if (str === "q" || str === "Q") {
+        document.getElementById('display').innerText = "On Worship";
+    } else if (str === "w" || str === "W"){
+        document.getElementById('display').innerText = "On Hiphop";
+    } else if (str === "e" || str === "E"){
+        document.getElementById('display').innerText = "On Hymn";
+    } else if (str === "a" || str === "A"){
+        document.getElementById('display').innerText = "On cruise";
+    } else if (str === "s" || str === "S"){
+        document.getElementById('display').innerText = "On Celestial hymn";
+    } else if (str === "d" || str === "D"){
+        document.getElementById('display').innerText = "On Egun song";
+    } else if (str === "z" || str === "Z"){
+        document.getElementById('display').innerText = "On Bridge drum";
+    } else if (str === "x" || str === "X"){
+        document.getElementById('display').innerText = "On Finesse";
+    } else if (str === "c" || str === "C"){
+        document.getElementById('display').innerText = "On Saxophone";
+    }
+    
+
+    let audio = document.getElementById(str);
+    audio.play();
+}
+
+window.document.onkeyup = function(event) {
+    let str = event.key
+    if (str === "q" || str === "Q") {
+        play("Q");
+    } else if (str === "w" || str === "W"){
+        play("W");
+    } else if (str === "e" || str === "E"){
+        play("E");
+    } else if (str === "a" || str === "A"){
+        play("A");
+    } else if (str === "s" || str === "S"){
+        play("S");
+    } else if (str === "d" || str === "D"){
+        play("D");
+    } else if (str === "z" || str === "Z"){
+        play("Z");
+    } else if (str === "x" || str === "X"){
+        play("X");
+    } else if (str === "c" || str === "C"){
+        play("C");
+    }
+}
+
+</script>
+
+</head>
+<body>
+    <div class="container" id="drum-machine">
+    <h1 class="text-center">Damassoh Japhet Drum Machine</h1>
+    <div class="card my-3">
+    <div class="card-body">
+    <div class="text-center" id="display">Nothing Yet</div>
+</div>
+</div>
+    <div class="d-grid gap-2">
+    <button class="drum-pad btn btn-blocks btn-primary" id="drum-0" onclick="play('Q')">
+        Q
+        <audio src="/clip/clip-0.mp3" class="clip" id="Q">
+        </button>
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-1" onclick="play('W')">
+        W
+        <audio src="/clip/clip-1.mp3" class="clip" id="W">
+    </button>
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-2" onclick="play('E')">
+        E
+        <audio src="/clip/clip-2.mp3" class="clip" id="E">
+    </button>
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-3" onclick="play('A')">
+        A
+        <audio src="/clip/clip-3.mp3" class="clip" id="A">
+    </button>
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-4" onclick="play('S')">
+        S
+        <audio src="/clip/clip-4.mp3" class="clip" id="S">
+    </button>
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-5" onclick="play('D')">
+        D
+        <audio src="/clip/clip-5.mp3" class="clip" id="D">
+    </button>
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-6" onclick="play('Z')">
+        Z
+        <audio src="/clip/clip-6.mp3" class="clip" id="Z">
+    </button>
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-7" onclick="play('X')">
+        X
+        <audio src="/clip/clip-7.mp3" class="clip" id="X">
+    </button>
+
+    <button class="drum-pad btn btn-block btn-primary" id="drum-8" onclick="play('C')">
+        C
+        <audio src="/clip/clip-8.mp3" class="clip" id="C">
+    </button>
+</div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
